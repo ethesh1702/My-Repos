@@ -1,0 +1,42 @@
+
+questions=[
+    {
+        "prompt": "Who wrote the novel 1984?",
+        "options": ["A. George Orwell", "B. J.K. Rowling", "C. F. Scott Fitzgerald", "D. Ernest Hemingway"],
+        "correct answer": 'A'
+    },
+   
+    {
+        "prompt": "What is the capital city of Australia?",
+        "options":["A. Sydney", "B. Melbourne", "C. Canberra", "D. Brisbane"],
+        "correct answer": 'C'
+    },
+
+    {
+        "prompt":"What is the chemical symbol for Gold?",
+        "options":["A. Gd","B Go","C. Ag","D. Au"],
+        "correct answer":'D'
+    },  
+
+    {
+        "prompt":"In what year was the first iPhone released?",
+        "options": ["A. 2005" , "B. 2007", "C. 2008", "D. 2010"],
+        "correc answer": 'B'
+    }
+]
+
+def run_quiz(questions):
+    score=0
+    for question in questions:
+        print(question["prompt"])
+        for option in question["options"]:
+            print(option)
+        answer=input("enter your answer A,B,C,D: ")
+        if answer == question("answer"):
+            print("correct awesome \n")
+            score+=1
+        else:
+            print("wrong sorry correct answer was", question["answer"],'\n')        
+    print(f"you got (score) out of {len(questions)} question correct")
+
+run_quiz(questions)
