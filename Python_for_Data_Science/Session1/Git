@@ -1,0 +1,15 @@
+Push file with your CV to git
+Initialize the local directory Docs as a Git repository.
+$ git init -b main
+Add your CV in your new local repository. 
+$ git add .
+Commit the files that you've staged in your local repository.
+$ git commit -m "CV"
+Create a repo Docs on GitHub. 
+At the top of your repository on GitHub.com's Quick Setup page, click  to copy the remote repository URL.
+Set up connection between remote and origin
+$ git remote add origin <REMOTE_URL> 
+Verifies the new remote URL
+$ git remote -v
+#Push the changes in your local repository to GitHub.com.
+git push -u origin main
